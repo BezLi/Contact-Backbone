@@ -1,0 +1,1 @@
+<a href="#contact/<%- id %>" class='listContactsLinck' data-group='<%- group %>'><%- name %></a>

@@ -1,0 +1,169 @@
+@import "reset";
+//*========================================================================================*/
+@mixin clearfix {
+	*zoom: 1;
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+$pink1: #af9393;
+$pink2: #f1e2e2;
+$pink3: #af9c9c;
+$gray: #696767;
+//*========================================================================================*/
+
+
+body {
+	background: #313030;	
+	@include clearfix;	
+}
+
+.wraper {
+	background: $gray;
+	width: 900px;
+	padding: 20px;
+	margin: -270px 0 0 -470px;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border-radius: 10px;
+}
+
+.leftPanel, .userInfo{
+	background: $pink3;
+	border-radius: 10px;	
+	float: left;
+	border: 1px solid $pink1;	
+	padding: 10px;
+}
+
+.leftPanel{
+	height: 478px;
+	width: 350px;
+}
+
+.searchLeftPanel, .contactsGroup {
+	background: $pink2;	
+	border: 1px solid $pink1; 
+	color: $gray;
+	font-size: 12px;
+	font-family: Tahoma, sans-serif;
+}
+
+.searchLeftPanel {
+	width: 328px;
+	padding: 5px 10px;
+}
+
+.contactsGroup {
+	width: 350px;
+	padding: 4px 7px;
+	margin: 10px 0 20px;	
+}
+
+.listContacts {
+	width: 348px;
+	border: 1px solid $pink1;
+	background: $pink2;
+	color: $gray;
+	height: 350px;
+	list-style: none;
+	margin-bottom: 10px;	
+	.listContactsLinck {
+		display: inline-block;
+		width: 328px;		
+		padding: 0 10px;
+		border-bottom: 2px dashed $pink1;
+		line-height: 30px;
+		color: $gray;
+		text-decoration: none;
+		&:hover, &.active {
+			background: $pink3;
+			color: $pink2;	
+			border-bottom-color: $pink2;
+		}
+	}
+}
+
+.userInfo {
+	height: 478px;
+	width: 475px;
+	margin-left: 30px;
+	background: $pink2;
+	position: relative;
+	.textField {
+		background: $pink2;	
+		border: 1px solid $pink1; 
+		color: $gray;
+		font-size: 12px;
+		font-family: Tahoma, sans-serif;
+		height: 24px;
+		padding: 0 5px;
+
+	}
+	.contactsGroup {
+		width: 150px;
+		padding: 4px 7px;
+		margin: 0;	
+	}
+}
+
+.iconContainer {
+	background: $pink3;
+	margin: -10px -10px 30px;
+	border-radius: 10px 10px 0 0;
+	@include clearfix;
+}
+
+.userIcon {
+	float: left;
+	margin: 10px 30px 10px 10px;
+}
+
+.userName {
+	color: $gray;
+	font-size: 22px;
+	font-family: Tahoma, sans-serif;
+	float: left;
+	margin-top: 30px;
+	width: 300px;
+	span {
+		font-size: 12px;
+		color: red;
+		display: none;
+		margin-top: 5px;
+	}
+}
+
+.userData {
+	line-height: 44px;	
+	color: $gray;
+	@include clearfix;
+	&:before {
+		content: attr(data-text);
+		font-weight: bold;
+		float: left;
+		width: 70px;
+		color: $pink1;
+		font-size: 14px;
+	}
+	span {
+		font-size: 12px;
+		color: red;
+		display: none;
+		line-height: 16px;
+	}
+}
+
+.buttonBlock {
+	position: absolute;
+	left: 10px;
+	bottom: 15px;
+} 
+

@@ -1,0 +1,134 @@
+/* RESET STYLES*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; vertical-align: baseline; background: transparent; }
+
+body { font-size: 12px; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+/* remember to define focus styles! */
+:focus { outline: 0; }
+
+/* remember to highlight inserts somehow! */
+ins { text-decoration: none; }
+
+del { text-decoration: line-through; }
+
+/* tables still need ‘cellspacing=”0?‘ in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+
+body { font-size: 12px; color: #222; background: #fff; font-family: Arial, Helvetica, sans-serif; }
+
+/*--- Headings --- */
+h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #111; }
+
+h1 { font-size: 20px; margin-bottom: 0.5em; }
+
+h2 { font-size: 18px; }
+
+h3 { font-size: 16px; }
+
+h4 { font-size: 14px; }
+
+h5 { font-size: 12px; }
+
+h6 { font-size: 10px; }
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0; }
+
+/*--- Text elements --- */
+p { margin: 0; }
+
+p img.left { float: left; padding: 0; }
+
+p img.right { float: right; }
+
+a, a:link, a:active { color: #009; text-decoration: underline; }
+
+a:focus, a:hover { color: #000; }
+
+blockquote { color: #666; font-style: italic; }
+
+strong { font-weight: bold; }
+
+em, dfn { font-style: italic; }
+
+sup, sub { line-height: 0; }
+
+abbr, acronym { border-bottom: 1px dotted #666; }
+
+address { font-style: italic; }
+
+del { color: #666; }
+
+/*--- Lists --- */
+li ul, li ol { margin: 0; }
+
+ul, ol { margin: 0; }
+
+ul { list-style-type: disc; }
+
+ol { list-style-type: decimal; }
+
+dl { margin: 0; }
+
+dl dt { font-weight: bold; }
+
+dd { margin-left: 0; }
+
+/*--- Tables --- */
+table { width: 100%; }
+
+th { font-weight: bold; }
+
+thead th { background: #c3d9ff; }
+
+th, td, caption { padding: 10px; }
+
+tr.even td { background: #e5ecf9; }
+
+tfoot { font-style: italic; }
+
+caption { background: #eee; }
+
+body { background: #313030; *zoom: 1; }
+body:before, body:after { content: " "; display: table; }
+body:after { clear: both; }
+
+.wraper { background: #696767; width: 900px; padding: 20px; margin: -270px 0 0 -470px; height: 500px; position: absolute; left: 50%; top: 50%; border-radius: 10px; }
+
+.leftPanel, .userInfo { background: #af9c9c; border-radius: 10px; float: left; border: 1px solid #af9393; padding: 10px; }
+
+.leftPanel { height: 478px; width: 350px; }
+
+.searchLeftPanel, .contactsGroup { background: #f1e2e2; border: 1px solid #af9393; color: #696767; font-size: 12px; font-family: Tahoma, sans-serif; }
+
+.searchLeftPanel { width: 328px; padding: 5px 10px; }
+
+.contactsGroup { width: 350px; padding: 4px 7px; margin: 10px 0 20px; }
+
+.listContacts { width: 348px; border: 1px solid #af9393; background: #f1e2e2; color: #696767; height: 350px; list-style: none; margin-bottom: 10px; }
+.listContacts .listContactsLinck { display: inline-block; width: 328px; padding: 0 10px; border-bottom: 2px dashed #af9393; line-height: 30px; color: #696767; text-decoration: none; }
+.listContacts .listContactsLinck:hover, .listContacts .listContactsLinck.active { background: #af9c9c; color: #f1e2e2; border-bottom-color: #f1e2e2; }
+
+.userInfo { height: 478px; width: 475px; margin-left: 30px; background: #f1e2e2; position: relative; }
+.userInfo .textField { background: #f1e2e2; border: 1px solid #af9393; color: #696767; font-size: 12px; font-family: Tahoma, sans-serif; height: 24px; padding: 0 5px; }
+.userInfo .contactsGroup { width: 150px; padding: 4px 7px; margin: 0; }
+
+.iconContainer { background: #af9c9c; margin: -10px -10px 30px; border-radius: 10px 10px 0 0; *zoom: 1; }
+.iconContainer:before, .iconContainer:after { content: " "; display: table; }
+.iconContainer:after { clear: both; }
+
+.userIcon { float: left; margin: 10px 30px 10px 10px; }
+
+.userName { color: #696767; font-size: 22px; font-family: Tahoma, sans-serif; float: left; margin-top: 30px; width: 300px; }
+.userName span { font-size: 12px; color: red; display: none; margin-top: 5px; }
+
+.userData { line-height: 44px; color: #696767; *zoom: 1; }
+.userData:before, .userData:after { content: " "; display: table; }
+.userData:after { clear: both; }
+.userData:before { content: attr(data-text); font-weight: bold; float: left; width: 70px; color: #af9393; font-size: 14px; }
+.userData span { font-size: 12px; color: red; display: none; line-height: 16px; }
+
+.buttonBlock { position: absolute; left: 10px; bottom: 15px; }
